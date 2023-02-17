@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FREE FACEBOOK Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <test name=" FACEBOOK App Test Cases(failed)">
+    <classes>
+      <class name="com.fb.test.HomePageTest">
+        <methods>
+          <include name="verifyProfilePageTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyGroupsLinkTest"/>
+        </methods>
+      </class> <!-- com.fb.test.HomePageTest -->
+    </classes>
+  </test> <!--  FACEBOOK App Test Cases(failed) -->
+</suite> <!-- Failed suite [FREE FACEBOOK Application Test Automation Test Suite] -->
