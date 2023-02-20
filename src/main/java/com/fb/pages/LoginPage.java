@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.fb.base.BaseClass;
+import com.fb.base.Base;
 
-public class LoginPage extends BaseClass {
+public class LoginPage extends Base {
 
 	@FindBy(name="email")
 	WebElement username;

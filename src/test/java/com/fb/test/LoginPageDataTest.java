@@ -4,12 +4,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.fb.base.BaseClass;
-import com.fb.pages.HomePage;
+import com.fb.base.Base;
 import com.fb.pages.LoginPage;
 import com.fb.utilities.LoginPageUtility;
 
-public class LoginPageDataTest extends BaseClass {
+public class LoginPageDataTest extends Base {
 	public String sheetName = "Sheet1";
 	LoginPage loginPage;
 	LoginPageUtility loginPageUtility;

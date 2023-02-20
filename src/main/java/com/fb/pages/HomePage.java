@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.fb.base.BaseClass;
+import com.fb.base.Base;
 
-public class HomePage extends BaseClass {
+public class HomePage extends Base {
 	
 	@FindBy(xpath="//a[@aria-label='Friends']")
 	WebElement friendsLink;

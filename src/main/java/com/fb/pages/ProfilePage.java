@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.fb.base.BaseClass;
+import com.fb.base.Base;
 
-public class ProfilePage extends BaseClass{
+public class ProfilePage extends Base{
 
 	@FindBy(linkText="Adithya Veldandi")
 	WebElement profileTitle;

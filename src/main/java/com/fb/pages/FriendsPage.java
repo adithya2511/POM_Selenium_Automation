@@ -1,8 +1,8 @@
 package com.fb.pages;
 
-import com.fb.base.BaseClass;
+import com.fb.base.Base;
 
-public class FriendsPage  extends BaseClass {
+public class FriendsPage  extends Base {
 
 }
  

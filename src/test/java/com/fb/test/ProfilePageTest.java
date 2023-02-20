@@ -3,13 +3,13 @@ package com.fb.test;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.fb.base.BaseClass;
+import com.fb.base.Base;
 import com.fb.pages.FriendsPage;
 import com.fb.pages.HomePage;
 import com.fb.pages.LoginPage;
 import com.fb.pages.ProfilePage;
   
-public class ProfilePageTest extends BaseClass {
+public class ProfilePageTest extends Base {
 	HomePage homePage;
 	LoginPage loginPage;
 	ProfilePage profilePage;

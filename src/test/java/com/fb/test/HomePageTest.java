@@ -5,14 +5,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.fb.base.BaseClass;
+import com.fb.base.Base;
 import com.fb.pages.FriendsPage;
 import com.fb.pages.GroupsPage;
 import com.fb.pages.HomePage;
 import com.fb.pages.LoginPage;
 import com.fb.pages.ProfilePage;
 
-public class HomePageTest extends BaseClass {
+public class HomePageTest extends Base {
 	LoginPage loginPage;
 	HomePage homePage;
 	FriendsPage friendsPage;
@@ -28,13 +28,14 @@ public class HomePageTest extends BaseClass {
 		initialization();
 		homePage = new HomePage();
 		loginPage = new LoginPage();
+		profilePage = new ProfilePage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	@Test(priority=1)
 	public void verifyHomePageTitleTest() {
 		String homePageTitle = homePage.verifyHomePageTitle(); 
-		Assert.assertEquals(homePageTitle, "Facebook – log in or sign up","HomePageTitle not match");
+		Assert.assertEquals(homePageTitle, "Facebook","HomePageTitle not match");
 	}
 	
 	@Test(priority=2)
@@ -54,6 +55,6 @@ public class HomePageTest extends BaseClass {
 	
 	@AfterMethod
 	public void tearDown(){
-//		driver.quit();
+		driver.quit();
 	}
 }

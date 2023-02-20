@@ -6,11 +6,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.fb.base.BaseClass;
+import com.fb.base.Base;
 import com.fb.pages.HomePage;
 import com.fb.pages.LoginPage;
 
-public class LoginPageTest  extends BaseClass {
+public class LoginPageTest  extends Base {
 	LoginPage loginPage;
 	HomePage homePage;
  

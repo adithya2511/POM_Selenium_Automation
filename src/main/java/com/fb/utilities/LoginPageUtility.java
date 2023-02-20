@@ -11,9 +11,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebDriver;
 
-import com.fb.base.BaseClass;
+import com.fb.base.Base;
 
-public class LoginPageUtility extends BaseClass {
+public class LoginPageUtility extends Base {
 
 	public WebDriver driver;
 	public Properties prop;
